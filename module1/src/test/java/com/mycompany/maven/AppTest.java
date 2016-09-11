@@ -1,38 +1,38 @@
 package com.mycompany.maven;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * Unit test for Module1
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+public class AppTest {
+
+    @BeforeClass
+    public void setUpClass() {
+        System.out.println("Before Class Setup");
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Before
+    public void setUp() {
+        System.out.println("Setup");
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    @After
+    public void tearDown() {
+        System.out.println("Teardown");
+    }
+
+    @AfterClass
+    public void tearDownClass() {
+        System.out.println("After Class Teardown");
+    }
+
+    @Test
+    public void testMethod() {
+        System.out.println("Testing Method");
     }
 }
