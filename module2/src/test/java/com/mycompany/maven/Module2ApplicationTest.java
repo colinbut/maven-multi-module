@@ -7,9 +7,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * Unit test for Module6
+ * Unit test for Module2
  */
-public class AppTest {
+public class Module2ApplicationTest {
 
     @BeforeClass
     public void setUpClass() {

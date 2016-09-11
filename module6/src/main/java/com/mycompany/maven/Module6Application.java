@@ -1,14 +1,14 @@
 package com.mycompany.maven;
 
 /**
- * Module5 Application
+ * Module6 Application
  *
  * @author colin
  */
-public class App {
+public class Module6Application {
 
     public static void main( String[] args ) {
-        System.out.println("Module5");
+        System.out.println("Module6");
     }
 
 }
